@@ -4,47 +4,55 @@
 namespace App\Http\Controllers;
 
 use App\Models\Student;
-use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
     public function show($id)
     {
         $student = Student::find($id);
-        echo $student->name . "<br>";
-        echo $student->GPA . "<br>";
-        echo $student->age . "<br>";
-        echo $student->created_at . "<br>";
-        echo $student->updated_at;
+        return view('updateUser', ['student' => $student]);
     }
 
-    public function insert()
+    public function insert(Request $request)
     {
         $student = new Student();
-        $student->name = Str::random(20);
-        $student->GPA = mt_rand(1, 5);
-        $student->age = mt_rand(1, 80);
+        $student->name = $request->input('name');
+        $student->GPA = $request->input('GPA');
+        $student->age = $request->input('age');
         $student->save();
+
+        return response()->view('adduser');
     }
 
-    public function update($id)
+    public function update($id, Request $request)
     {
-        $student = Student::where("id", "=", $id)->firstOrFail();
-        $student->update(["age" => mt_rand(1, 80)]);
+        $student = Student::find($id);
+        $student->name = $request->input('name');
+        $student->GPA = $request->input('GPA');
+        $student->age = $request->input('age');
+        $student->update();
+
+        return redirect()->action('StudentController@showAll');
+
     }
 
     public function delete($id)
     {
         $student = Student::find($id);
         $student->delete();
+
+        return redirect()->action('StudentController@showAll');
     }
 
     public function showAll()
     {
         $students = Student::all();
+        return response()->view('showAllUsers', ['students' => $students]);
+    }
 
-        foreach ($students as $student) {
-            echo $student->name . " " . $student->GPA . " " . $student->age . " " . $student->updated_at . "<br>";
-        }
+    public function getAddUserView()
+    {
+        return view('adduser');
     }
 }

@@ -94,6 +94,13 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+
+                <form method="GET" action="{{action('StudentController@showAll')}}">
+                    <input type="submit" value="Show All"/>
+                </form>
+                <form method="GET" action="{{action('StudentController@getAddUserView')}}">
+                    <input type="submit" value="Add user"/>
+                </form>
             </div>
         </div>
     </body>

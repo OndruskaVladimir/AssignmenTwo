@@ -19,11 +19,15 @@ Route::get('/show/{id}', [
         'as' => 'show', 'uses' => 'StudentController@show'
 ]);
 
-Route::get('/insert', [
+Route::get('/insert-form', [
+    'as' => 'insert-form', 'uses' => 'StudentController@getAddUserView'
+]);
+
+Route::post('/insert', [
     'as' => 'insert', 'uses' => 'StudentController@insert'
 ]);
 
-Route::get('/update/{id}', [
+Route::post('/update/{id}', [
     'as' => 'update', 'uses' => 'StudentController@update'
 ]);
 
