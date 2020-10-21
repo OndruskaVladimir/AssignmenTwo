@@ -10,14 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b701f0c-3149-4b63-a8c3-5dab4dba7210" name="Default Changelist" comment="added Student seeder.">
-      <change afterPath="$PROJECT_DIR$/resources/views/adduser.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/showAllUsers.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/updateUser.blade.php" afterDir="false" />
+    <list default="true" id="0b701f0c-3149-4b63-a8c3-5dab4dba7210" name="Default Changelist" comment="added GUI for CRUD and added buttons to main page for navigation.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/adduser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adduser.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +131,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -156,7 +152,10 @@
       <workItem from="1602957678336" duration="56000" />
       <workItem from="1602958148820" duration="18000" />
       <workItem from="1602958303197" duration="28000" />
-      <workItem from="1603184018042" duration="11015000" />
+      <workItem from="1603184018042" duration="11111000" />
+      <workItem from="1603206934565" duration="242000" />
+      <workItem from="1603299229820" duration="41000" />
+      <workItem from="1603299514505" duration="1555000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1602670675066</created>
@@ -179,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602672902743</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added GUI for CRUD and added buttons to main page for navigation.">
+      <created>1603205913583</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603205913583</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,13 +207,14 @@
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Added Student model, route and Student controller with CRUD functions." />
     <MESSAGE value="added Student seeder." />
-    <option name="LAST_COMMIT_MESSAGE" value="added Student seeder." />
+    <MESSAGE value="added GUI for CRUD and added buttons to main page for navigation." />
+    <option name="LAST_COMMIT_MESSAGE" value="added GUI for CRUD and added buttons to main page for navigation." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1602958329842">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1603299269673">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1602958329842" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1603299269673" />
     <state x="751" y="247" key="NewPhpClassDialog" timestamp="1602671938111">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

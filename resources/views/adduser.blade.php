@@ -1,3 +1,7 @@
+<form method="GET" action="{{action('StudentController@showAll')}}">
+    <input type="submit" value="Show All"/>
+</form>
+
 <form method="post" action="{{ action('StudentController@insert') }}">
     Meno:<br>
     <input type="text" name="name" placeholder="Meno" value="" required autofocus/><br>

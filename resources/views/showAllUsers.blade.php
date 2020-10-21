@@ -1,3 +1,7 @@
+<form method="GET" action="{{action('StudentController@getAddUserView')}}">
+    <input type="submit" value="Add user"/>
+</form>
+
 <table>
     @foreach($students as $student)
         <tr>
